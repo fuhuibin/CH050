@@ -1,0 +1,315 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F18617E7-8277-4925-9498-DE76B6E224D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>气门插入翻转机</RootNamespace>
+    <AssemblyName>气门插入翻转机</AssemblyName>
+    <ApplicationIcon>favicon %283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelSrv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\ExcelSrv.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.OPCAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\Interop.OPCAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=8.6.20.131, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common.Native, Version=8.6.20.131, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.Common.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.UI, Version=8.6.20.189, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.UI.Styles3D, Version=8.6.20.189, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.UI.Styles3D.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.UI.WindowsForms, Version=8.6.20.189, Culture=neutral, PublicKeyToken=4544464cdeaab541, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NationalInstruments.UI.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="opcrcw.comn, Version=1.10.1.21, Culture=neutral, PublicKeyToken=9a40e993cbface53" />
+    <Reference Include="opcrcw.da, Version=3.0.2.22, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\opcrcw.da.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcSrv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\潍柴测量机\潍柴测量机\bin\Debug\OpcSrv.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TXmlRdWrt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\DataReport\frmAlarmRec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataReport\frmAlarmRec.designer.cs">
+      <DependentUpon>frmAlarmRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataReport\frmTestRecView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataReport\frmTestRecView.designer.cs">
+      <DependentUpon>frmTestRecView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DebugButton\frmButtDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugButton\frmButtDebug.designer.cs">
+      <DependentUpon>frmButtDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DebugButton\frmButtDebugBitCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugButton\frmButtDebugBitCfg.designer.cs">
+      <DependentUpon>frmButtDebugBitCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGasketCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGasketCfg.designer.cs">
+      <DependentUpon>frmGasketCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSysParCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSysParCfg.designer.cs">
+      <DependentUpon>frmSysParCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\globalVarFun.cs" />
+    <Compile Include="Forms\OpcCfg\frmAlarmMsgCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmAlarmMsgCfg.designer.cs">
+      <DependentUpon>frmAlarmMsgCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmContColModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmContColModi.designer.cs">
+      <DependentUpon>frmContColModi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmOpcGroupCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmOpcGroupCfg.designer.cs">
+      <DependentUpon>frmOpcGroupCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmOpcItemCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmOpcItemCfg.designer.cs">
+      <DependentUpon>frmOpcItemCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmProdNameCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmProdNameCfg.designer.cs">
+      <DependentUpon>frmProdNameCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmReadItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\frmReadItems.designer.cs">
+      <DependentUpon>frmReadItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpcCfg\TPlcSrv.cs" />
+    <Compile Include="Forms\Program.cs" />
+    <Compile Include="Forms\TiniFile.cs" />
+    <Compile Include="Forms\TRsComm.cs" />
+    <Compile Include="Forms\TSqlApp.cs" />
+    <Compile Include="Forms\UserManage\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmAddUser.designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmDeleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmDeleUser.designer.cs">
+      <DependentUpon>frmDeleUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmModiUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManage\frmModiUser.designer.cs">
+      <DependentUpon>frmModiUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DataReport\frmAlarmRec.resx">
+      <DependentUpon>frmAlarmRec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataReport\frmTestRecView.resx">
+      <DependentUpon>frmTestRecView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DebugButton\frmButtDebug.resx">
+      <DependentUpon>frmButtDebug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DebugButton\frmButtDebugBitCfg.resx">
+      <DependentUpon>frmButtDebugBitCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGasketCfg.resx">
+      <DependentUpon>frmGasketCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSysParCfg.resx">
+      <DependentUpon>frmSysParCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmAlarmMsgCfg.resx">
+      <DependentUpon>frmAlarmMsgCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmContColModi.resx">
+      <DependentUpon>frmContColModi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmOpcGroupCfg.resx">
+      <DependentUpon>frmOpcGroupCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmOpcItemCfg.resx">
+      <DependentUpon>frmOpcItemCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmProdNameCfg.resx">
+      <DependentUpon>frmProdNameCfg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpcCfg\frmReadItems.resx">
+      <DependentUpon>frmReadItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManage\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManage\frmDeleUser.resx">
+      <DependentUpon>frmDeleUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManage\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManage\frmModiUser.resx">
+      <DependentUpon>frmModiUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon %283%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>rem Begin Measurement Studio Licensing for x64
+rem Do NOT modify contents between 'Begin Measurement Studio Licensing for x64' and 'End Measurement Studio Licensing for x64'
+rem For more information, refer to Protecting Your Project from LC0000 Build Error (ms-help://MS.VSCC.v80/MS.VSIPCC.v80/NI.MeasurementStudio.2005/MStudioIntegration/XML/Protect_LC0000_Error.html) in the NI Measurement Studio Help.
+if exist %25WINDIR%25\Microsoft.NET\Framework64\v2.0.50727\ %25WINDIR%25\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe setwow
+rem End Measurement Studio Licensing for x64
+
+</PreBuildEvent>
+    <PostBuildEvent>rem Begin Measurement Studio Licensing for x64
+rem Do NOT modify contents between 'Begin Measurement Studio Licensing for x64' and 'End Measurement Studio Licensing for x64'
+rem For more information, refer to Protecting Your Project from LC0000 Build Error (ms-help://MS.VSCC.v80/MS.VSIPCC.v80/NI.MeasurementStudio.2005/MStudioIntegration/XML/Protect_LC0000_Error.html) in the NI Measurement Studio Help.
+if exist %25WINDIR%25\Microsoft.NET\Framework64\v2.0.50727\ %25WINDIR%25\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe set64
+rem End Measurement Studio Licensing for x64
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

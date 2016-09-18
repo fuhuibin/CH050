@@ -1,0 +1,48 @@
+C:\资料\JEE\海马\Backup\潍柴测量机\bin\Debug\潍柴测量机.exe
+C:\资料\JEE\海马\Backup\潍柴测量机\bin\Debug\潍柴测量机.pdb
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\ResolveAssemblyReference.cache
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmAlarmRec.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmTestRecView.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmGasketCfg.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmMain.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmSysParCfg.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmContColModi.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmOpcGroupCfg.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmOpcItemCfg.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmProdNameCfg.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\MyTestBed.frmReadItems.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmAddUser.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmDeleUser.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmLogin.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmModiUser.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\潍柴测量机.Properties.Resources.resources
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\潍柴测量机.csproj.GenerateResource.Cache
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\潍柴测量机.exe.licenses
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\潍柴测量机.exe
+C:\资料\JEE\海马\Backup\潍柴测量机\obj\Debug\潍柴测量机.pdb
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\潍柴测量机.exe
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\潍柴测量机.pdb
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\bin\Debug\潍柴测量机.exe
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\bin\Debug\潍柴测量机.pdb
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\ResolveAssemblyReference.cache
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmAlarmRec.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmTestRecView.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmGasketCfg.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmMain.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmSysParCfg.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmContColModi.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmOpcGroupCfg.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmOpcItemCfg.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmProdNameCfg.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\MyTestBed.frmReadItems.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmAddUser.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmDeleUser.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmLogin.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\TUserManageUI.frmModiUser.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\潍柴测量机.Properties.Resources.resources
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\潍柴测量机.csproj.GenerateResource.Cache
+C:\windows 32\资料\JEE\Jee-Projects\海马气密检测项目\海马 - 三菱\Backup\潍柴测量机\obj\Debug\潍柴测量机.exe.licenses
+C:\windows 32\资料\JEE\Jee-Projects\潍柴\潍柴测量机\obj\Debug\潍柴测量机.exe
+C:\windows 32\资料\JEE\Jee-Projects\潍柴\潍柴测量机\obj\Debug\潍柴测量机.pdb
+C:\windows 32\资料\JEE\Jee-Projects\全柴_CH110\潍柴测量机\obj\Debug\潍柴测量机.exe
+C:\windows 32\资料\JEE\Jee-Projects\全柴_CH110\潍柴测量机\obj\Debug\潍柴测量机.pdb
