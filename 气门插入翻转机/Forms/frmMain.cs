@@ -329,6 +329,9 @@ namespace MyTestBed
             MeasGood3,
             MeasResult4,  //第四个测量值
             MeasGood4,
+            manulSpeed,
+            fastSpeed,
+            slowSpeed,
         }
 
         private void StatusRecvProc(int ItemIdx, object ItemVal)
@@ -845,7 +848,7 @@ namespace MyTestBed
                     TestRecTblInit(TestRecTblName);
                     RsCommInit();
                     RsPlotTimer.Enabled = true;
-
+                    SpeedInit();
                     AlarmInfoProcInit();
                     AlarmRecTblInit();
 
@@ -1374,6 +1377,15 @@ namespace MyTestBed
                 }
              }
         
+        }
+
+
+        private void SpeedInit()
+        {
+           pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.manulSpeed, manulSpeed);
+           pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.fastSpeed, fastSpeed);
+           pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.slowSpeed, slowSpeed);
+
         }
 
         //**************************************************************************************************

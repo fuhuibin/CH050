@@ -1,0 +1,6 @@
+2016/07/13
+First commit.
+2016/09/02
+Release for CM.
+2016/10/13
+Send speed settings to PLC during formload.
