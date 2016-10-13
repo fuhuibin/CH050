@@ -848,10 +848,10 @@ namespace MyTestBed
                     TestRecTblInit(TestRecTblName);
                     RsCommInit();
                     RsPlotTimer.Enabled = true;
-                    SpeedInit();
+
                     AlarmInfoProcInit();
                     AlarmRecTblInit();
-
+                    SpeedInit();
                 }
             }
         } 
@@ -1382,6 +1382,9 @@ namespace MyTestBed
 
         private void SpeedInit()
         {
+           float manulSpeed = IniFilePtr.IniReadFloat(TGlobalVar.SysParSecName, "ManulSpeed", 12);
+           float fastSpeed = IniFilePtr.IniReadFloat(TGlobalVar.SysParSecName, "FastSpeed", 12);
+           float slowSpeed = IniFilePtr.IniReadFloat(TGlobalVar.SysParSecName, "SlowSpeed", 12);
            pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.manulSpeed, manulSpeed);
            pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.fastSpeed, fastSpeed);
            pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.slowSpeed, slowSpeed);
