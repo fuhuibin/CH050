@@ -332,6 +332,7 @@ namespace MyTestBed
             manulSpeed,
             fastSpeed,
             slowSpeed,
+            ProID
         }
 
         private void StatusRecvProc(int ItemIdx, object ItemVal)
@@ -1020,16 +1021,38 @@ namespace MyTestBed
             cmbProdName.SelectedIndex = -1;
         }
 
-        //暂不支持上位机切换品种  20160412
+        enum ProIDChoose
+        {
+            A = 1,  //1.5
+            B,      //1.5T
+            C,      //1.8
+            D       //4H
+        }
         private void cmbProdName_SelectedIndexChanged(object sender, EventArgs e)
         {
             //if (gVCommPar.MesEnable == false)
             //{
-            //    int SeleID = cmbProdName.SelectedIndex;
+            int SeleID = cmbProdName.SelectedIndex;
 
-            //    gVCommPar.ProdID = Convert.ToInt32(cmbProdNameID.Items[SeleID].ToString());
-            //    ProdParUpdate(gVCommPar.ProdID);
-            //}
+            //gVCommPar.ProdID = Convert.ToInt32(cmbProdNameID.Items[SeleID].ToString());
+            gVCommPar.ProdID = SeleID + 1;
+            ProdParUpdate(gVCommPar.ProdID);
+
+            switch (gVCommPar.ProdID)
+            {
+                case 1:
+                    pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.ProID, (int)ProIDChoose.A);
+                    break;
+                case 2:
+                    pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.ProID, (int)ProIDChoose.B);
+                    break;
+                case 3:
+                    pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.ProID, (int)ProIDChoose.C);
+                    break;
+                case 4:
+                    pPlcSrv.SyncWriteItem(OpcGroup_ToPlcPar, (int)EnumIpcCtrlItem.ProID, (int)ProIDChoose.D);
+                    break;
+            }
         }
 
         private int ProdParUpdate(int ProdID) //产品变化刷新产品参数
