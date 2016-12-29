@@ -74,7 +74,7 @@
             this.ColModiMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ContColModiMenuItem});
             this.ColModiMenuStrip.Name = "contextMenuStrip1";
-            this.ColModiMenuStrip.Size = new System.Drawing.Size(154, 26);
+            this.ColModiMenuStrip.Size = new System.Drawing.Size(154, 48);
             this.ColModiMenuStrip.Text = "列项字段修改";
             this.ColModiMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ColModiMenuStrip_ItemClicked);
             // 

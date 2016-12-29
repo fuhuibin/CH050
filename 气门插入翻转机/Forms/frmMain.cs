@@ -825,8 +825,7 @@ namespace MyTestBed
             //UserAuthorityManage();
             Release.Visible = false;
             AllTBoxInitUpdate();
-            CaliLimitInit();
-            CaliParInit();
+        
             if (PlcCommInit() == false)
             {
                 MessageBox.Show("OpcSrv初始化失败，请检查！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -842,6 +841,8 @@ namespace MyTestBed
                 else
                 {
                     //GasketParInit(); //灯箱垫片初始化
+                    CaliLimitInit();
+                    CaliParInit();
 
                     ConGroupInit();
                     ProdNameInitProc();

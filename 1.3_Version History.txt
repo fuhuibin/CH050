@@ -1,0 +1,12 @@
+2016/07/13
+First commit.
+2016/09/02
+Release for CM.
+2016/10/13
+Send speed settings to PLC during formload.
+2016/10/20
+Add Product choose function.
+2016/12/29
+首次开机启动标定值上下限无法数据库取出。
+怀疑系统开机没稳定，程序即启动导致。
+现放在OPC初始化之后

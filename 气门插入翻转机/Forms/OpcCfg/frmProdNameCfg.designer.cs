@@ -424,6 +424,7 @@
             // 
             this.DgViewRec.AllowUserToAddRows = false;
             this.DgViewRec.AllowUserToDeleteRows = false;
+            this.DgViewRec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgViewRec.BackgroundColor = System.Drawing.Color.White;
             this.DgViewRec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.DgViewRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
